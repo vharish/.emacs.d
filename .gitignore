@@ -1,0 +1,6 @@
+*~
+#*
+*.bak
+*.swp
+.tags
+._.DS_Store
