@@ -1,0 +1,30 @@
+;;;; php-mode hooks
+
+;; Indendation rules
+(add-hook 'php-mode-hook 'my-php-mode-hook)
+(defun my-php-mode-hook ()
+  "My PHP mode configuration."
+  (setq indent-tabs-mode nil
+        tab-width 4
+        c-basic-offset 4
+	c-basic-indent 4))
+
+(add-hook 'php-mode-hook (lambda ()
+    (defun ywb-php-lineup-arglist-intro (langelem)
+      (save-excursion
+        (goto-char (cdr langelem))
+        (vector (+ (current-column) c-basic-offset))))
+    (defun ywb-php-lineup-arglist-close (langelem)
+      (save-excursion
+        (goto-char (cdr langelem))
+        (vector (current-column))))
+    (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
+    (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)))
+
+(global-relative-line-numbers-mode 1)
+
+;;;; Productivity tools
+
+;; Mutt config
+(server-start)
+    (add-to-list 'auto-mode-alist '("/mutt" . mail-mode))
