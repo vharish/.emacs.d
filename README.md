@@ -1,4 +1,4 @@
-#### My emacs setup
+## My emacs setup
 
 ### Configuration files:
 - my-keybindings.el - To have the custom key bindings
