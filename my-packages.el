@@ -13,12 +13,13 @@
 (defvar required-packages
   '(
     magit
-	ace-jump-mode
+    ace-jump-mode
     yasnippet
     php-auto-yasnippets
     php-mode
-	evil
-	linum-relative
+    evil
+    linum-relative
+    cider
   ) "a list of packages to ensure are installed at launch.")
 
 ; my-packages.el

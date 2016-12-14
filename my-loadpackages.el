@@ -55,3 +55,11 @@
 (require 'linum-relative)
 (linum-on)
 (linum-relative-global-mode)
+
+;; Display related minor mode config
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(tool-bar-mode -1)
+
+;; Persistence/session config
+(desktop-save-mode 1)
