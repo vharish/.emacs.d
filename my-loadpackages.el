@@ -14,6 +14,11 @@
 (add-to-list 'auto-mode-alist
     '("\\.php[34]?\\'\\|\\.phtml\\'" . php-mode))
 
+;;; html-mode
+;; Mode config
+;; Make html-mode work with files ending in .twig
+(add-to-list 'auto-mode-alist '("\\.twig$" . html-mode))
+
 ;;; org-mode configuration
 ;; Enable org-mode
 (require 'org)
@@ -50,6 +55,7 @@
 
 ;; php-auto-yasnippets
 (require 'php-auto-yasnippets)
+(setq php-auto-yasnippet-php-program "~/.emacs.d/snippets/Create-PHP-YASnippet.php")
 
 ;; linum-relative mode
 (require 'linum-relative)
@@ -57,9 +63,14 @@
 (linum-relative-global-mode)
 
 ;; Display related minor mode config
-(menu-bar-mode -1)
+;;(menu-bar-mode -1)
 (toggle-scroll-bar -1)
 (tool-bar-mode -1)
 
 ;; Persistence/session config
 (desktop-save-mode 1)
+
+;; Smooth scrolling
+(require 'smooth-scrolling)
+(smooth-scrolling-mode 1)
+(setq smooth-scroll-margin 5)

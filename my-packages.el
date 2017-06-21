@@ -20,9 +20,11 @@
     evil
     linum-relative
     cider
+    smooth-scrolling
   ) "a list of packages to ensure are installed at launch.")
 
 ; my-packages.el
+;; Not necessary as this is outdated and built-in in latest versions >=24.3)
 (require 'cl)
 
 ; method to check if all packages are installed

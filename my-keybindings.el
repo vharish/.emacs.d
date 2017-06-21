@@ -2,8 +2,10 @@
 
 ;;; normal mode bindings
 ;; scrolling
-(global-set-key "\M-n" "\C-u3\C-v")
-(global-set-key "\M-p" "\C-u3\M-v")
+;; (global-set-key "\M-n" "\C-u3\C-v")
+;; (global-set-key "\M-p" "\C-u3\M-v")
+
+(global-set-key "\C-e" "\C-u3\C-e")
 
 ;;; magit bindings
 (global-set-key (kbd "C-x g") 'magit-status)
