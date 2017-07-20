@@ -21,6 +21,8 @@
     linum-relative
     cider
     smooth-scrolling
+    evil-org
+    let-alist
   ) "a list of packages to ensure are installed at launch.")
 
 ; my-packages.el

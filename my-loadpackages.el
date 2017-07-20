@@ -44,7 +44,7 @@
 
 ;; evil mode
 (require 'evil)
-  (evil-mode 1)
+  (evil-mode t)
 
 ;; yasnippet
 (require 'yasnippet)
@@ -62,15 +62,10 @@
 (linum-on)
 (linum-relative-global-mode)
 
-;; Display related minor mode config
-;;(menu-bar-mode -1)
-(toggle-scroll-bar -1)
-(tool-bar-mode -1)
-
 ;; Persistence/session config
 (desktop-save-mode 1)
 
-;; Smooth scrolling
-(require 'smooth-scrolling)
-(smooth-scrolling-mode 1)
-(setq smooth-scroll-margin 5)
+;; Keybindings for evil-org mode
+(require 'evil-org)
+(add-hook 'org-mode-hook 'evil-org-mode)
+(evil-org-set-key-theme '(navigation insert textobjects additional))
