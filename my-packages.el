@@ -23,6 +23,7 @@
     smooth-scrolling
     evil-org
     let-alist
+    helm
   ) "a list of packages to ensure are installed at launch.")
 
 ; my-packages.el

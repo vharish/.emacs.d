@@ -10,12 +10,10 @@
 ;;;; Major modes
 
 ;;; php-mode
-;; Mode config
 (add-to-list 'auto-mode-alist
     '("\\.php[34]?\\'\\|\\.phtml\\'" . php-mode))
 
 ;;; html-mode
-;; Mode config
 ;; Make html-mode work with files ending in .twig
 (add-to-list 'auto-mode-alist '("\\.twig$" . html-mode))
 
@@ -27,6 +25,9 @@
 ;; The above is the default in recent emacsen
 
 ;;;; Minor modes
+
+;; helm mode
+(require 'helm-config)
 
 ;; IDO mode
 (require 'ido)
