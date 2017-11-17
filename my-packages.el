@@ -15,6 +15,7 @@
     magit
     ace-jump-mode
     yasnippet
+    yasnippet-snippets
     php-auto-yasnippets
     php-mode
     evil
@@ -24,6 +25,9 @@
     evil-org
     let-alist
     helm
+    fzf
+    restclient
+    auto-complete
   ) "a list of packages to ensure are installed at launch.")
 
 ; my-packages.el
