@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: select-all
+# key: select
+# --
+select * from $1;

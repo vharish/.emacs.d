@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: select-10
+# key: select
+# --
+select * from $1 limit 10 ;
