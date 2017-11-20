@@ -13,6 +13,12 @@
 (with-eval-after-load 'evil-maps
   (define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up))
 (define-key global-map (kbd "M-u") 'universal-argument)
+(eval-after-load "evil"
+  '(progn
+     (define-key evil-normal-state-map (kbd "C-j") 'evil-window-left)
+     (define-key evil-normal-state-map (kbd "C-k") 'evil-window-down)
+     (define-key evil-normal-state-map (kbd "C-l") 'evil-window-up)
+     (define-key evil-normal-state-map (kbd "C-;") 'evil-window-right)))
 
 ;;; yasnippet bindings
 ;; php bindings
@@ -41,4 +47,4 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
 
 ;; FZF mappings
-(define-key global-map (kbd "C-x C-g") 'fzf-git)
+(define-key global-map (kbd "C-c C-g") 'fzf-git)

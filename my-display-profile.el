@@ -14,3 +14,10 @@
 (require 'smooth-scrolling)
 (smooth-scrolling-mode 1)
 (setq smooth-scroll-margin 5)
+
+;; General settings
+(setq column-number-Mode t)
+
+;; Line highlighting.
+(global-hl-line-mode t)
+(set-face-background hl-line-face "#262535")

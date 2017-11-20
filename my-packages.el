@@ -16,6 +16,7 @@
     ace-jump-mode
     yasnippet
     yasnippet-snippets
+    helm-c-yasnippet
     php-auto-yasnippets
     php-mode
     evil
@@ -28,6 +29,7 @@
     fzf
     restclient
     auto-complete
+    phpunit
   ) "a list of packages to ensure are installed at launch.")
 
 ; my-packages.el

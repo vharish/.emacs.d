@@ -23,7 +23,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (deeper-blue)))
- '(org-agenda-files (quote ("~/Documents/org-docs/work-todo.org")))
  '(package-selected-packages
    (quote
     (auto-complete go-autocomplete multi-line find-file-in-repository find-file-in-git-repo helm smooth-scrolling php-auto-yasnippets magit linum-relative evil-org cider ace-jump-mode))))
